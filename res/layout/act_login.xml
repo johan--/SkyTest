@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/login_layout_padding"
+    tools:context=".LoginActivity" >
+
+    <ImageView
+        android:id="@+id/ivBeUmLogo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:src="@drawable/beum_logo" />
+
+    <EditText
+        android:id="@+id/etId"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_text_height"
+        android:layout_below="@id/ivBeUmLogo"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/login_et_id_hint"
+        android:inputType="textVisiblePassword"
+        android:padding="5dp"
+        android:text="test"
+        android:textSize="@dimen/login_text_size" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_text_height"
+        android:layout_below="@id/etId"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="@string/login_et_password_hint"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:text="1234"
+        android:textSize="@dimen/login_text_size" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPass"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/primary_button_selector"
+        android:text="@string/login_btn_sign_in"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_button_text_size" />
+
+    <ImageView
+        android:id="@+id/ivCosmicLogo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:padding="30dp"
+        android:src="@drawable/cosmiclion_logo" />
+
+</RelativeLayout>
